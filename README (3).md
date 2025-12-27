@@ -9,12 +9,20 @@ To write a Python program that calculates the **sum of all elements** in a list.
 3. Print the result.
 
 ## 🧾 Program
+```
+items=[14,16,18,22]
+sum_numbers=0
+for x in items:
+        sum_numbers += x
+print(sum_numbers)
+```
 
-Add code here
 
 ## Output
+![alt text](<Screenshot 2025-12-27 095313.png>)
 
 ## Result
+Thus,the program has been executed successfully.
 # Regex in Python: Filter Words Without the Letter 'e'
 
 ## 🎯 Aim
@@ -31,10 +39,18 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+```
+import re
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']   
+
+print([w for w in items if 'e' not in w])
+
+```
 ## Output
+![alt text](<Screenshot 2025-12-27 095627.png>)
 
 ## Result
+Thus,the program has been executed successfully.
 # Module-3
 # 🧹 Strings-Remove Nth Index Character from a String
 
@@ -52,11 +68,25 @@ To write a Python program that accepts a string and removes the character at a s
 8. Print the final result.
 
 ## 💻 Program
-Add Code Here
+```
+def remove(str):
+    n = int(input("Enter the index to remove: "))
+    a = ""
+    for j in range(len(str)):
+        if j != n:
+            a += str[j]
+    return a
+
+str1 = input("Enter a string: ")
+print("Modified string:", remove(str1))
+        
+```
 
 ## Output
+![alt text](<Screenshot 2025-12-27 101647.png>)
 
 ## Result
+Thus,the program has been executed successfully.
 # Strings-Palindrome Check in Python (Without Built-in Functions)
 
 ## 🎯 Aim
@@ -71,12 +101,21 @@ To write a Python program to check whether the string `"google"` is a **palindro
 4. Execute the program.
 
 ## 🧾 Program
+```
+str='google'
+rev=str[::-1]
+if str==rev:
+    print("The given string is a palindrome")
+else:
+    print("The given string is not a palindrome")
 
-Add code here
+```
 
 ## Output
+![alt text](<Screenshot 2025-12-27 101927.png>)
 
 ## Result
+Thus,the program has been executed successfully.
 # Tuple in Python: Check Element Existence
 
 ## 🎯 Aim
@@ -89,8 +128,15 @@ To write a Python program that checks if the element `'n'` and the element `8` e
 4. Print the results.
 
 ## 🧾 Program
-Add code here
+```
+tuplex = ("s", 8, "a", "v", "n", "g", "u", "r", "c", "e")
+print("n" in tuplex)
+print( 8 in tuplex)
+
+```
 
 ## Output
+![alt text](<Screenshot 2025-12-27 102148.png>)
 
 ## Result
+Thus,the program has been executed successfully.
